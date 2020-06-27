@@ -1,0 +1,79 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+
+.header a {
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(113, 89, 193);
+}
+
+
+.banner {
+    padding: 32px 0;
+}
+
+.banner .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 6px 11px -7px rgba(0, 0, 0, 0.16);
+}
+.rounded-image {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(113, 89, 193);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rounded-image img {
+    height: 50px;
+}
+.h1 {
+    margin-top: 20px;
+}
+.list-share {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+.list-share .list-share__item {
+    padding: 16px;
+}
+.list-share .list-share__item a{
+    text-decoration: none;
+    color: rgb(113, 89, 193);
+}
+
+
+.header a:hover,
+.list-share .list-share__item a:hover {
+    color: rgba(113, 89, 193, .5);
+    transition: color 200ms;
+}
