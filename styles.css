@@ -1,5 +1,12 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap';
 
+:root {
+    --color-primary: rgb(113, 89, 193);
+    --color-background: #F7F7F7;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +14,21 @@
 }
 
 body {
-    background-color: #F7F7F7;
+    background-color: var(--color-background);
     font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     padding: 30px;
     text-align: center;
+    box-shadow: 0 6px 11px -7px rgba(0, 0, 0, 0.10);
 }
 
 .header a {
     padding: 30px;
     text-decoration: none;
-    color: rgb(113, 89, 193);
+    color: var(--color-primary);
 }
 
 
@@ -36,10 +44,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color:  var(--color-white);
     padding: 32px;
     border-radius: 10px;
-    box-shadow: 0 6px 11px -7px rgba(0, 0, 0, 0.16);
 }
 .rounded-image {
     width: 100px;
@@ -76,4 +83,101 @@ body {
 .list-share .list-share__item a:hover {
     color: rgba(113, 89, 193, .5);
     transition: color 200ms;
+}
+
+.section {
+    padding: 32px 0;
+}
+
+.section.section__courses {
+    padding: 32px 20px;
+}
+
+.list-courses {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    column-gap: 20px;
+}
+
+.list-courses__item .card {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-white);
+    box-shadow: 0 6px 11px -7px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-courses__item .card:hover {
+    cursor: pointer;
+}
+
+.list-courses__item .card__wrapper {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.list-courses__item .card__wrapper img {
+    width: auto;
+    position: relative;
+    top: 25px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease .3s all;
+}
+
+.modal.maximize {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal .modal__content {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    position: relative;
+}
+
+.modal .modal__content iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.modal .btn__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }

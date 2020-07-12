@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Iniciando no Front-end</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="menu">
+                <a href="/" title="Home">Home</a>
+                <a href="conteudo.html" title="Conteudo">Conteudo</a>
+                <a href="https://discordapp.com/invite/gCRAFhc" title="Comunidade">Comunidade</a>
+                <a href="mailto:oi@rocketseat.com.br" title="Email">Email</a>
+                <a href="tel:+5547992078767" title="Telefone">Telefone</a>
+                <a href="sobre.html" title="Sobre" class="active">Sobre</a>
+            </div>
+        </header>
+        <section class="section section__courses">
+            <ul class="list-courses">
+                <li class="list-courses__item">
+                    <div id="starter" class="card">
+                        <div class="card__wrapper">
+                            <img src="https://app.rocketseat.com.br/static/media/Starter.64c237cc.svg" alt="Starter">
+                        </div>
+                        <h2 class="card__title">Starter</h2>
+                    </div>
+                </li>
+                <li class="list-courses__item">
+                    <div id="launchbase" class="card">
+                        <div class="card__wrapper">
+                            <img src="https://app.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="Launchbase">
+                        </div>
+                        <h2 class="card__title">Launchbase</h2>
+                    </div>
+                </li>
+                <li class="list-courses__item">
+                    <div id="gostack" class="card">
+                        <div class="card__wrapper">
+                            <img src="https://app.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="GoStack">
+                        </div>
+                        <h2 class="card__title">GoStack</h2>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div id="modal" class="modal">
+            <div class="modal__content">
+                <button class="btn__close"><i data-feather="x"></i></button>
+                <iframe src="https://rocketseat.com.br/" frameborder="0"></iframe>
+            </div>
+        </div>
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
